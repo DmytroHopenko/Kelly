@@ -7,3 +7,7 @@ window.addEventListener('scroll', () =>{
         toTop.classList.remove('active')
     )
 })
+
+function topFunction(){
+    document.bodyElement.scrollY = 0;
+}

@@ -102,7 +102,7 @@ body{
     /* STYLES OF SECTION */
     section{
         width: 100%;
-        height: 93vh;
+        height: 100vh;
         background: url('../img/hero-bg.jpg') top right;
         background-attachment: fixed;
         background-size: cover;
@@ -125,7 +125,7 @@ body{
     .Name-After{
         color: #222222;
         font-size: 48px;
-        font-weight: bold 400;
+        font-weight: 400 bold;
     }
     .get-started p {
         font-size: 22px;
