@@ -394,7 +394,7 @@ body{
         box-shadow: rgb(0 0 0 / 8%) 0px 0px 25px 0px;
         position: sticky;
         top: 0;
-        z-index: 10;
+        z-index: 999;
     }
     .nav-bar{
         position: absolute;
