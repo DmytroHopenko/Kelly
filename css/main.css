@@ -38,6 +38,9 @@ body{
         text-decoration: none;
         margin-left: 20px;
     }
+    .cross{
+        display: none;
+    }
     .main-menu{
         list-style: none;
         display: flex;
@@ -218,6 +221,9 @@ body{
         text-transform: uppercase;
         text-decoration: none;
         margin-left: 20px;
+    }
+    .cross{
+        display: none;
     }
     .main-menu{
         list-style: none;
