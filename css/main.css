@@ -121,7 +121,9 @@ body{
     }
     .get-started{
         position: absolute;
-        top: 280px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -310,7 +312,9 @@ body{
     }
     .get-started{
         position: fixed;
-        top: 280px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -529,7 +533,9 @@ body{
     }
     .get-started{
         position: fixed;
-        top: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: flex;
         align-items: center;
         flex-direction: column;
