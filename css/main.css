@@ -547,6 +547,7 @@ body{
         font-size: 16px;
         color: #888888;
         font-weight: 200 bold;
+        text-align: center;
     }
     .about-start{
         padding: 10px 25px;
