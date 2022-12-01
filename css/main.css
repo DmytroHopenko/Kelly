@@ -132,7 +132,7 @@ body{
     .get-started, h1, p{
         margin: 0;
     }
-    .Name-After{
+    .name-after{
         color: #222222;
         font-size: 48px;
         font-weight: 400 bold;
@@ -323,7 +323,7 @@ body{
     .get-started, h1, p{
         margin: 0;
     }
-    .Name-After{
+    .name-after{
         color: #222222;
         font-size: 48px;
         font-weight: 400 bold;
@@ -545,7 +545,7 @@ body{
     .get-started, h1, p{
         margin: 0 10px;
     }
-    .Name-After{
+    .name-after{
         color: #222222;
         font-size: 32px;
         font-weight: 400 bold;
