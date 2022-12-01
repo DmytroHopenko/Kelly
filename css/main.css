@@ -533,10 +533,10 @@ body{
     }
     .get-started{
         position: fixed;
-        top: 45%;
-        left: 50%;
+        margin: auto;
         width: 80vw;
-        transform: translate(-50%, -55%);
+        top: 47%;
+        transform: translate(0%, -53%);
         display: flex;
         align-items: center;
         flex-direction: column;
