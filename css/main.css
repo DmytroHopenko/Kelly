@@ -513,7 +513,7 @@ body{
         background: url('../img/hero-bg.jpg') top right;
         background-attachment: fixed;
         background-size: cover;
-        position: sticky;
+        position: relative;
         z-index: 3;
         display: flex;
         justify-content: center;
