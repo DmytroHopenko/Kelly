@@ -171,7 +171,7 @@ body{
     .information p span{
         color: #34b7a7;
     }
-    .arrow-up-but{
+    body > a.arrow-up-but{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -360,7 +360,7 @@ body{
     .information p span{
         color: #34b7a7;
     }
-    .arrow-up-but{
+    body > a.arrow-up-but{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -500,7 +500,7 @@ body{
         width: 20px;
         margin: 0 5px;
     }
-    .social{
+    header > div.nav-bar > div.wrapper-social-media > a{
         transition: fill 0.3s ease-in-out;
     }
     .social:hover{
@@ -580,7 +580,7 @@ body{
     .information p span{
         color: #34b7a7;
     }
-    .arrow-up-but{
+    body > a.arrow-up-but{
         display: flex;
         align-items: center;
         justify-content: center;
