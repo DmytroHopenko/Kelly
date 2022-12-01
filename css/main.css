@@ -540,11 +540,11 @@ body{
     }
     .Name-After{
         color: #222222;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 400 bold;
     }
     .get-started p {
-        font-size: 18px;
+        font-size: 16px;
         color: #888888;
         font-weight: 200 bold;
     }
