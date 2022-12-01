@@ -9,8 +9,8 @@ body{
     background: #e9e8e6;
     z-index: 1;
 }
-@media screen and (min-width: 1000px) {
-    /* STYLES OF HEADER */
+@media screen and (min-width: 1024px){
+    /* STYLES HEADER */
     header{
         background: rgb(233, 232, 230);
         height: 72px;
@@ -96,15 +96,20 @@ body{
     .social{
         transition: fill 0.3s ease-in-out;
     }
+    #toggle-menu{
+        display: none;
+    }
     .social:hover{
         fill: #34b7a7;
     }
-    /* STYLES OF SECTION */
+    /* STYLES SECTION */
     section{
         width: 100%;
         height: 100vh;
         background: url('../img/hero-bg.jpg') top right;
         background-attachment: fixed;
+        background-blend-mode: multiply;
+        background-color: #f8f9fa;
         background-size: cover;
         position: sticky;
         z-index: 3;
@@ -145,7 +150,7 @@ body{
     .about-start:hover{
         background: #3accbb;
     }
-    /* STYLES OF FOOTER */
+    /* STYLES FOOTER */
     footer{
         width: 100%;
         height: 110px;
@@ -185,9 +190,408 @@ body{
         opacity: 1;
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 991px) and (max-width: 1024px) {
+    /* STYLES HEADER */
+    header{
+        background: rgb(233, 232, 230);
+        height: 72px;
+        width: 100%;
+        box-shadow: rgb(0 0 0 / 8%) 0px 0px 25px 0px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .nav-bar{
+        position: absolute;
+        height: 72px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo a{
+        font-weight: 200;
+        color: #222222;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    .main-menu{
+        list-style: none;
+        display: flex;
+    }
+    .list-menu a{
+        padding: 5px 15px;
+        text-decoration: none;
+        color: #888888;
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        transition: color 0.3s ease-in-out;
+    }
+    .list-menu a:hover{
+        color: #222222;
+    }
+    .list-menu a::after{
+        position: absolute;
+        content: '';
+        top: 30px;
+        left: 16px;
+        width: 0;
+        height: 2px;
+        background: #34b7a7;
+        transition: width 0.3s ease-in-out;
+    }
+    .list-menu a:hover::after{
+        width: 25px;
+    }
+    #opened{
+        position: relative;
+        color: #222222;
+    }
+    #opened::after{
+        position: absolute;
+        display: block;
+        content: '';
+        top: 30px;
+        left: 16px;
+        width: 25px;
+        height: 2px;
+        background: #34b7a7;
+    }
+    .wrapper-social-media{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 72px;
+        margin-right: 20px;
+    }
+    .wrapper-social-media a{
+        height: 20px;
+        width: 20px;
+        margin: 0 5px;
+    }
+    .social{
+        transition: fill 0.3s ease-in-out;
+    }
+    #toggle-menu{
+        display: none;
+    }
+    .social:hover{
+        fill: #34b7a7;
+    }  
+
     .get-started{
         position: fixed;
         top: 350px;
+    }
+    /* STYLES SECTION */
+    section{
+        width: 100%;
+        height: 100vh;
+        background: url('../img/hero-bg.jpg') top right;
+        background-attachment: fixed;
+        background-blend-mode: multiply;
+        background-color: #f8f9fa;
+        background-size: cover;
+        position: sticky;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+    }
+    .get-started{
+        position: fixed;
+        top: 280px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .get-started, h1, p{
+        margin: 0;
+    }
+    .Name-After{
+        color: #222222;
+        font-size: 48px;
+        font-weight: 400 bold;
+    }
+    .get-started p {
+        font-size: 22px;
+        color: #888888;
+        font-weight: 200 bold;
+    }
+    .about-start{
+        padding: 10px 25px;
+        background-color: #34b7a7;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin: 30px 0;
+        transition: background 0.5s ease-in-out;
+    }
+    .about-start:hover{
+        background: #3accbb;
+    }
+    /* STYLES FOOTER */
+    footer{
+        width: 100%;
+        height: 110px;
+        background: rgb(233, 232, 230);
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .information{
+        text-align: center;
+        font-weight: 200;
+    }
+    .information p span{
+        color: #34b7a7;
+    }
+    .arrow-up-but{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: #34b7a7;
+        border-radius: 50px;
+        position: fixed;
+        z-index: 996;
+        bottom: 15px;
+        right: 15px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .arrow-up-but.active{
+        bottom: 15px;
+        pointer-events: auto;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 990px) {
+    header{
+        background: rgb(233, 232, 230);
+        height: 72px;
+        width: 100%;
+        box-shadow: rgb(0 0 0 / 8%) 0px 0px 25px 0px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .nav-bar{
+        position: absolute;
+        height: 72px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo a{
+        font-weight: 200;
+        color: #222222;
+        font-size: 32px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    nav{
+        display: none;
+        top: -999px;
+    }
+    nav.active-menu{
+        display: block;
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(9, 9, 9, 0.9);
+        z-index: 999;
+    }
+    .cross {
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+    .main-menu{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 55px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        padding: 10px 0;
+        border-radius: 10px;
+        background-color: #fff;
+        overflow-y: auto;
+        transition: 0.3s;
+    }
+    .list-menu{
+        margin: 7px 20px;
+    }
+    .list-menu a{
+        padding: 5px 15px;
+        text-decoration: none;
+        color: #222222;
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        transition: color 0.3s ease-in-out;
+    }
+    .list-menu a:hover{
+        color: #222222;
+    }
+    .list-menu a::after{
+        position: absolute;
+        content: '';
+        top: 30px;
+        left: 16px;
+        width: 0;
+        height: 2px;
+        background: #34b7a7;
+        transition: width 0.3s ease-in-out;
+    }
+    .list-menu a:hover::after{
+        width: 25px;
+    }
+    #opened{
+        position: relative;
+        color: #34b7a7;
+    }
+    #opened::after{
+        position: absolute;
+        display: block;
+        content: '';
+        top: 30px;
+        left: 16px;
+        width: 25px;
+        height: 2px;
+        background: #34b7a7;
+    }
+    .wrapper-social-media{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 72px;
+        margin-right: 20px;
+    }
+    .wrapper-social-media a{
+        height: 20px;
+        width: 20px;
+        margin: 0 5px;
+    }
+    .social{
+        transition: fill 0.3s ease-in-out;
+    }
+    .social:hover{
+        fill: #34b7a7;
+    }
+    /* STYLES SECTION */
+    section{
+        width: 100%;
+        height: 100vh;
+        background: url('../img/hero-bg.jpg') top right;
+        background-attachment: fixed;
+        background-size: cover;
+        position: sticky;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+    }
+    section:before {
+        content: "";
+        background: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .get-started{
+        position: fixed;
+        top: 350px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .get-started, h1, p{
+        margin: 0 10px;
+    }
+    .Name-After{
+        color: #222222;
+        font-size: 36px;
+        font-weight: 400 bold;
+    }
+    .get-started p {
+        font-size: 18px;
+        color: #888888;
+        font-weight: 200 bold;
+    }
+    .about-start{
+        padding: 10px 25px;
+        background-color: #34b7a7;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin: 30px 0;
+        transition: background 0.5s ease-in-out;
+    }
+    .about-start:hover{
+        background: #3accbb;
+    }
+    /* STYLES FOOTER */
+    footer{
+        width: 100%;
+        height: 110px;
+        background: rgb(233, 232, 230);
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .information{
+        text-align: center;
+        font-weight: 200;
+    }
+    .information p span{
+        color: #34b7a7;
+    }
+    .arrow-up-but{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: #34b7a7;
+        border-radius: 50px;
+        position: fixed;
+        z-index: 996;
+        bottom: 15px;
+        right: 15px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+    }
+    .arrow-up-but.active{
+        bottom: 15px;
+        pointer-events: auto;
+        opacity: 1;
     }
 }
