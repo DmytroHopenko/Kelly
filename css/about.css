@@ -291,12 +291,15 @@ main > section, section::before{
         height: auto;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
     }
     .kelly{
         width: 100%;
         height: auto;
         margin: 0;
         padding: 10px 0;
+        display: flex;
+        justify-content: center;
     }
     .kelly-img{
         max-width: 100%;
@@ -309,6 +312,7 @@ main > section, section::before{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-start;
     }
     .info-kelly h3{
         font-size: 26px;
@@ -319,8 +323,8 @@ main > section, section::before{
     .info-kelly .italic-detail{
         font-weight: 200;
         font-style: italic;
-        font-size: 18px;
-        margin-bottom: 1rem;
+        font-size: 18px; 
+        margin: 0 0 1rem 0;
     }
     .detail-info{
         display: flex;
@@ -329,7 +333,10 @@ main > section, section::before{
     }
     .column-detail{
         flex: 0 0 auto;
-        width: 50%;
+        width: 100%;
+    }
+    .column-detail:first-child{
+        margin-bottom: 10px;
     }
     .column-detail ul{
         list-style: none;
@@ -346,7 +353,7 @@ main > section, section::before{
     .info-kelly p{
         font-weight: 200;
         font-size: 18px;
-        margin-bottom: 1rem;
+        margin: 0;
     }
 }
 @media screen and (max-width: 768px){}
