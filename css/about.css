@@ -2,31 +2,38 @@
 body{
     color: rgb(68, 68, 68);
 }
+main > section, section::before{
+    background: transparent;
+}
 @media screen and (min-width: 1024px){
     main{
         width: 100%;
-        height: 100vh;
-        background-color: #f8f9fa;
+        height: 100%;
+        background-color: #fff;
         position: relative;
         z-index: 1;
         display: flex;
         flex-direction: column;
     }
     main > section{
-        background: #f8f9fa;
-        padding: 25px 0;
-        width: 73%;
+        background: #fff;
+        padding: 25px 10px;
+        width: 80%;
         height: auto;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .universal-text{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
         width: 100%;
         height: auto;
+        text-align: center;
     }
     .universal-text h2 {
         font-size: 32px;
@@ -48,6 +55,298 @@ body{
         font-size: 18px;
         font-weight: 200;
     }
+    .about-illustrator{
+        padding: 30px 0 0 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .kelly{
+        width: 33.3333%;
+        height: auto;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .kelly-img{
+        max-width: 100%;
+        height: auto;
+    }
+    .info-kelly{
+        height: 100%;
+        width: 66.6777%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info-kelly h3{
+        font-size: 26px;
+        color: #555555;
+        margin: 0 0 10px;
+        height: auto;
+    }
+    .info-kelly .italic-detail{
+        font-weight: 200;
+        font-style: italic;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    .detail-info{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .column-detail{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .column-detail ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .column-detail ul li{
+        margin-bottom: 15px;
+        width: 100%;
+        font-size: 18px;
+        color: #555;
+        font-weight: 200 bold;
+    }
+    .info-kelly p{
+        font-weight: 200;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
 }
-@media screen and (min-width: 991px) and (max-width: 1024px) {}
-@media screen and (max-width: 990px) {}
+
+@media screen and (min-width: 991px) and (max-width: 1024px) {
+    main{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    main > section{
+        background: #fff;
+        padding: 25px 10px;
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .universal-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .universal-text h2 {
+        font-size: 32px;
+        margin: 0 0 30px 0;
+        position: relative;
+        text-transform: uppercase;
+    }
+    .universal-text h2::after{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: rgb(52, 183, 167);
+        top: 60px;
+        left: calc(50% - 25px);
+    }
+    .universal-text p{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .about-illustrator{
+        padding: 30px 0 0 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .kelly{
+        width: 33.3333%;
+        height: auto;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .kelly-img{
+        max-width: 100%;
+        height: auto;
+    }
+    .info-kelly{
+        height: 100%;
+        width: 66.6777%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info-kelly h3{
+        font-size: 26px;
+        color: #555555;
+        margin: 0 0 10px;
+        height: auto;
+    }
+    .info-kelly .italic-detail{
+        font-weight: 200;
+        font-style: italic;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    .detail-info{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .column-detail{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .column-detail ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .column-detail ul li{
+        margin-bottom: 15px;
+        width: 100%;
+        font-size: 18px;
+        color: #555;
+        font-weight: 200 bold;
+    }
+    .info-kelly p{
+        font-weight: 200;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    main{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    main > section{
+        background: #fff;
+        padding: 25px 10px;
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .universal-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .universal-text h2 {
+        font-size: 32px;
+        margin: 0 0 30px 0;
+        position: relative;
+        text-transform: uppercase;
+    }
+    .universal-text h2::after{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 3px;
+        background: rgb(52, 183, 167);
+        top: 60px;
+        left: calc(50% - 25px);
+    }
+    .universal-text p{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .about-illustrator{
+        padding: 30px 0 0 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .kelly{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .kelly-img{
+        max-width: 100%;
+        height: auto;
+    }
+    .info-kelly{
+        height: 100%;
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info-kelly h3{
+        font-size: 26px;
+        color: #555555;
+        margin: 0 0 10px;
+        height: auto;
+    }
+    .info-kelly .italic-detail{
+        font-weight: 200;
+        font-style: italic;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+    .detail-info{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .column-detail{
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .column-detail ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .column-detail ul li{
+        margin-bottom: 15px;
+        width: 100%;
+        font-size: 18px;
+        color: #555;
+        font-weight: 200 bold;
+    }
+    .info-kelly p{
+        font-weight: 200;
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 768px){}
