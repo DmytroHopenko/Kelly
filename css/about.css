@@ -354,6 +354,7 @@ main > section, section::before{
         font-weight: 200;
         font-size: 18px;
         margin: 0;
+        text-align: left;
     }
 }
 @media screen and (max-width: 768px){}
