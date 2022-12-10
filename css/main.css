@@ -114,7 +114,7 @@ body{
         background-blend-mode: multiply;
         background-color: #f8f9fa;
         background-size: cover;
-        position: sticky;
+        position: relative;
         z-index: 3;
         display: flex;
         justify-content: center;
@@ -305,7 +305,7 @@ body{
         background-blend-mode: multiply;
         background-color: #f8f9fa;
         background-size: cover;
-        position: sticky;
+        position: relative;
         z-index: 3;
         display: flex;
         justify-content: center;
