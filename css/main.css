@@ -518,6 +518,7 @@ body{
         background-attachment: fixed;
         background-size: cover;
         position: relative;
+        top: 0;
         z-index: 3;
         display: flex;
         justify-content: center;
