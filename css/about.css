@@ -118,7 +118,72 @@ main > section, section::before{
         font-size: 18px;
         margin-bottom: 1rem;
     }
-    /* KELLY INFO BOX */
+    /* KELLY INFO BOX  END */
+
+    /* KELLY SKILLS */
+    .skills{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 30px 0 0 0;
+    }
+    .skills-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skills-bar > span {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0 0 6px 0;
+        color: #222;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .progress-bar{
+        position: relative;
+        width: 100%;
+        height: 10px;
+        background-color: #f3f3f3;
+        margin-bottom: 6px;
+    }
+    .progress-fill{
+        position: absolute;
+        height: 100%;
+        background: #34b7a7;
+    }
+
+    /* KELLY FACTS */
+    .facts{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 30px 0 0 0;
+    }
+    .mini-facts{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mini-facts > span{
+        font-size: 48px;
+        display: block;
+        color: #34b7a7;
+        font-weight: 400;
+        margin: 0;
+    }
+    .mini-facts > p{
+        font-weight: 200;
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 991px) and (max-width: 1024px) {
@@ -234,7 +299,71 @@ main > section, section::before{
         font-size: 18px;
         margin-bottom: 1rem;
     }
-    /* KELLY INFO BOX */
+     /* KELLY INFO BOX  END */
+
+    /* KELLY SKILLS */
+    .skills{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: 1rem;
+    }
+    .skills-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skills-bar > span {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0 0 6px 0;
+        color: #222;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .progress-bar{
+        position: relative;
+        width: 100%;
+        height: 10px;
+        background-color: #f3f3f3;
+        margin-bottom: 6px;
+    }
+    .progress-fill{
+        position: absolute;
+        height: 100%;
+        background: #34b7a7;
+    }
+     /* KELLY FACTS */
+     .facts{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        padding: 30px 0 0 0;
+    }
+    .mini-facts{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mini-facts > span{
+        font-size: 48px;
+        display: block;
+        color: #34b7a7;
+        font-weight: 400;
+        margin: 0;
+    }
+    .mini-facts > p{
+        font-weight: 200;
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
@@ -352,7 +481,74 @@ main > section, section::before{
         font-size: 18px;
         margin: 0 0 1rem 0;
     }
-    /* KELLY INFO BOX */
+     /* KELLY INFO BOX  END */
+
+    /* KELLY SKILLS */
+    .skills{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 1rem;
+    }
+    .skills-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skills-bar > span {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0 0 6px 0;
+        color: #222;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .skills-bar > span p{
+        text-align: left;
+        margin: 0;
+    }
+    .progress-bar{
+        position: relative;
+        width: 100%;
+        height: 10px;
+        background-color: #f3f3f3;
+        margin-bottom: 6px;
+    }
+    .progress-fill{
+        position: absolute;
+        height: 100%;
+        background: #34b7a7;
+    }
+     /* KELLY FACTS */
+     .facts{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 30px 0 0 0;
+    }
+    .mini-facts{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mini-facts > span{
+        font-size: 48px;
+        display: block;
+        color: #34b7a7;
+        font-weight: 400;
+        margin: 0;
+    }
+    .mini-facts > p{
+        font-weight: 200;
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 850px){
     main > section{
@@ -474,5 +670,73 @@ main > section, section::before{
         font-size: 18px;
         margin: 0 0 1rem 0;
     }
-    /* KELLY INFO BOX */
+     /* KELLY INFO BOX  END */
+
+    /* KELLY SKILLS */
+    .skills{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 1rem;
+    }
+    .skills-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .skills-bar > span {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0 0 6px 0;
+        color: #222;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .skills-bar > span p{
+        text-align: left;
+        margin: 0;
+    }
+    .progress-bar{
+        position: relative;
+        width: 100%;
+        height: 10px;
+        background-color: #f3f3f3;
+        margin-bottom: 6px;
+    }
+    .progress-fill{
+        position: absolute;
+        height: 100%;
+        background: #34b7a7;
+    }
+     /* KELLY FACTS */
+     .facts{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 30px 0 0 0;
+    }
+    .mini-facts{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mini-facts > span{
+        font-size: 48px;
+        display: block;
+        color: #34b7a7;
+        font-weight: 400;
+        margin: 0;
+    }
+    .mini-facts > p{
+        font-weight: 200;
+        font-size: 14px;
+        text-align: center;
+    }
 }
