@@ -238,6 +238,7 @@ main > section, section::before{
     .def{
         position: relative;
         top: 0;
+        left: 3px;
     }
     .rotated{
         transform: rotate(180deg);
@@ -510,6 +511,7 @@ main > section, section::before{
     .def{
         position: relative;
         top: 0;
+        left: 3px;
     }
     .rotated{
         transform: rotate(180deg);
@@ -787,6 +789,7 @@ main > section, section::before{
     .def{
         position: relative;
         top: 0;
+        left: 3px;
     }
     .rotated{
         transform: rotate(180deg);
@@ -1069,6 +1072,7 @@ main > section, section::before{
     .def{
         position: relative;
         top: 0;
+        left: 3px;
     }
     .rotated{
         transform: rotate(180deg);
