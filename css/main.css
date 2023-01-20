@@ -9,6 +9,12 @@ body{
     background: #e9e8e6;
     z-index: 1;
 }
+.disable-scroll{
+    overflow: hidden;
+}
+.cross{
+    cursor: pointer;
+}
 @media screen and (min-width: 1024px){
     /* STYLES HEADER */
     header{

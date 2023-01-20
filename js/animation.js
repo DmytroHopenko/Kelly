@@ -5,7 +5,4 @@ $(document).ready(function () {
   $(".cross").click(function () {
     $("nav").removeClass("active-menu");
   });
-  $("nav").click(function () {
-    $("nav").removeClass("active-menu");
-  });
 });
