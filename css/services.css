@@ -9,18 +9,373 @@
   .services-part {
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
   }
   .services-box {
-    background-color: #fff;
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    background: #fff;
+    box-shadow: 0px 0 35px 0 rgb(0 0 0 / 8%);
+    flex-basis: 350px;
+  }
+  .services-img-box{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .services-img-box svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .services-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s all;
+  }
+  #spot-blue, #spot-orange, #spot-yellow, #spot-pink, #spot-red, #spot-darkblue{
+    fill: #f5f5f5;
+    transition: 0.3s fill;
+  }
+  .services-box:hover #basketball{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #docs{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #speed{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #files{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #monitor{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #arch{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #spot-blue{
+    fill: #11dbcf;
+  }
+  .services-box:hover #spot-darkblue{
+    fill: #47aeff;
+  }
+  .services-box:hover #spot-orange{
+    fill: #ffa76e;
+  }
+  .services-box:hover #spot-yellow{
+    fill: #ffbb2c;
+  }
+  .services-box:hover #spot-red{
+    fill: #ff5828;
+  }
+  .services-box:hover #spot-pink{
+    fill: #e80368;
+  }
+  .services-title{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 15px 0;
+    color: #222222;
+  }
+  .services-details{
+    font-size: 14px;
+    color: rgb(68, 68, 68);
   }
 }
+
 @media screen and (min-width: 991px) and (max-width: 1024px) {
+  .services-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+  .services-part {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .services-box {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    background: #fff;
+    box-shadow: 0px 0 35px 0 rgb(0 0 0 / 8%);
+    flex-basis: 350px;
+  }
+  .services-img-box{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .services-img-box svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .services-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s all;
+  }
+  #spot-blue, #spot-orange, #spot-yellow, #spot-pink, #spot-red, #spot-darkblue{
+    fill: #f5f5f5;
+    transition: 0.3s fill;
+  }
+  .services-box:hover #basketball{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #docs{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #speed{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #files{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #monitor{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #arch{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #spot-blue{
+    fill: #11dbcf;
+  }
+  .services-box:hover #spot-darkblue{
+    fill: #47aeff;
+  }
+  .services-box:hover #spot-orange{
+    fill: #ffa76e;
+  }
+  .services-box:hover #spot-yellow{
+    fill: #ffbb2c;
+  }
+  .services-box:hover #spot-red{
+    fill: #ff5828;
+  }
+  .services-box:hover #spot-pink{
+    fill: #e80368;
+  }
+  .services-title{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 15px 0;
+    color: #222222;
+  }
+  .services-details{
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 990px) {
+  .services-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+  .services-part {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .services-box {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    background: #fff;
+    box-shadow: 0px 0 35px 0 rgb(0 0 0 / 8%);
+    flex-basis: 80%;
+  }
+  .services-img-box{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .services-img-box svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .services-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s all;
+  }
+  #spot-blue, #spot-orange, #spot-yellow, #spot-pink, #spot-red, #spot-darkblue{
+    fill: #f5f5f5;
+    transition: 0.3s fill;
+  }
+  .services-box:hover #basketball{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #docs{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #speed{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #files{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #monitor{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #arch{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #spot-blue{
+    fill: #11dbcf;
+  }
+  .services-box:hover #spot-darkblue{
+    fill: #47aeff;
+  }
+  .services-box:hover #spot-orange{
+    fill: #ffa76e;
+  }
+  .services-box:hover #spot-yellow{
+    fill: #ffbb2c;
+  }
+  .services-box:hover #spot-red{
+    fill: #ff5828;
+  }
+  .services-box:hover #spot-pink{
+    fill: #e80368;
+  }
+  .services-title{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 15px 0;
+    color: #222222;
+  }
+  .services-details{
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+  }
 }
 @media screen and (max-width: 768px) {
+  .services-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+  .services-part {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .services-box {
+    text-align: center;
+    padding: 70px 20px 80px 20px;
+    background: #fff;
+    box-shadow: 0px 0 35px 0 rgb(0 0 0 / 8%);
+    flex-basis: 85%;
+  }
+  .services-img-box{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .services-img-box svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .services-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s all;
+  }
+  #spot-blue, #spot-orange, #spot-yellow, #spot-pink, #spot-red, #spot-darkblue{
+    fill: #f5f5f5;
+    transition: 0.3s fill;
+  }
+  .services-box:hover #basketball{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #docs{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #speed{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #files{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #monitor{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #arch{
+    filter: brightness(0) invert(1);
+  }
+  .services-box:hover #spot-blue{
+    fill: #11dbcf;
+  }
+  .services-box:hover #spot-darkblue{
+    fill: #47aeff;
+  }
+  .services-box:hover #spot-orange{
+    fill: #ffa76e;
+  }
+  .services-box:hover #spot-yellow{
+    fill: #ffbb2c;
+  }
+  .services-box:hover #spot-red{
+    fill: #ff5828;
+  }
+  .services-box:hover #spot-pink{
+    fill: #e80368;
+  }
+  .services-title{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 15px 0;
+    color: #222222;
+  }
+  .services-details{
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+  }
 }
