@@ -1,0 +1,26 @@
+@media screen and (min-width: 1024px) {
+  .services-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    padding: 0 10px;
+    margin-bottom: 50px;
+  }
+  .services-part {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+  }
+  .services-box {
+    background-color: #fff;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+}
+@media screen and (max-width: 768px) {
+}
