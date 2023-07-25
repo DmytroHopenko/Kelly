@@ -1,19 +1,571 @@
 @media screen and (min-width: 1024px) {
-    .map-wrap{
-        width: 100%;
-        height: auto;
-        margin: 25px 0;
-    }
-    .map-wrap iframe{
-        width: 100%;
-        height: 300px;
-    }
-    
+  .map-wrap {
+    width: 100%;
+    height: auto;
+    margin: 25px 0 50px 0;
   }
+  .map-wrap iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .mail-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .left-details{
+    width: 40%;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wrap{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .wrap:hover .img-wrap{
+    background: #34b7a7;
+  }
+  .wrap:hover .img-wrap > svg{
+    color: #fff;
+  }
+  .wrap .wrap-info{
+    margin-left: 10px;
+  }
+  .wrap div h3{
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .wrap div p{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .img-wrap{
+    height: 46px;
+    width: 46px;
+    background: #effbf9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+  }
+  .img-wrap > svg{
+    height: 22px;
+    width: 22px;
+    color: #34b7a7;
+    transition: color 0.5s ease;
+  }
+  .right-details{
+     width: 60%;
+     padding-left: 25px;
+  }
+  form{
+    width: 100%;
+  }
+  #nameCollector, 
+  #emailCollector, 
+  #subjectCollector, 
+  #messageCollector{
+    margin: 0;
+    height: 30px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: none;
+    appearance: none;
+    color: #212529;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    background: #fff;
+    transition: border-color 0.5s ease-in-out;
+  }
+  #nameCollector:focus, #emailCollector:focus, #subjectCollector:focus, #messageCollector:focus{
+    outline: none !important;
+    border-color: #34b7a7;
+  }
+  form .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  form .column{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nameCollector{
+    width: 50%;
+    margin: 0 15px 25px 0;
+  }
+  #emailCollector{
+    width: 50%;
+    margin-bottom: 0 0 25px 15px;
+  }
+  #subjectCollector{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #messageCollector{
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 25px;
+    max-height: 250px;
+  }
+  .wrap-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrap-button  button{
+    color: #fff;
+    background: #34b7a7;
+    border-radius: 50px;
+    padding: 10px 30px 12px 30px;
+    border: 0;
+    font-size: 20px;
+    transition: background 0.5s ease;
+    cursor: pointer;
+  }
+  .wrap-button  button:hover{
+    background: #35ceb9;
+  }
+}
 @media screen and (min-width: 991px) and (max-width: 1024px) {
+  .map-wrap {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
   }
+  .map-wrap iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .mail-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .left-details{
+    width: 40%;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wrap{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .wrap:hover .img-wrap{
+    background: #34b7a7;
+  }
+  .wrap:hover .img-wrap > svg{
+    color: #fff;
+  }
+  .wrap .wrap-info{
+    margin-left: 10px;
+  }
+  .wrap div h3{
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .wrap div p{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .img-wrap{
+    height: 46px;
+    width: 46px;
+    background: #effbf9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+  }
+  .img-wrap > svg{
+    height: 22px;
+    width: 22px;
+    color: #34b7a7;
+    transition: color 0.5s ease;
+  }
+  .right-details{
+     width: 60%;
+     padding-left: 25px;
+  }
+  form{
+    width: 100%;
+  }
+  #nameCollector, 
+  #emailCollector, 
+  #subjectCollector, 
+  #messageCollector{
+    margin: 0;
+    height: 30px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: none;
+    appearance: none;
+    color: #212529;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    background: #fff;
+    transition: border-color 0.5s ease-in-out;
+  }
+  #nameCollector:focus, #emailCollector:focus, #subjectCollector:focus, #messageCollector:focus{
+    outline: none !important;
+    border-color: #34b7a7;
+  }
+  form .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  form .column{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nameCollector{
+    width: 50%;
+    margin: 0 15px 25px 0;
+  }
+  #emailCollector{
+    width: 50%;
+    margin-bottom: 0 0 25px 15px;
+  }
+  #subjectCollector{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #messageCollector{
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 25px;
+    max-height: 250px;
+  }
+  .wrap-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrap-button  button{
+    color: #fff;
+    background: #34b7a7;
+    border-radius: 50px;
+    padding: 10px 30px 12px 30px;
+    border: 0;
+    font-size: 20px;
+    transition: background 0.5s ease;
+    cursor: pointer;
+  }
+  .wrap-button  button:hover{
+    background: #35ceb9;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 990px) {
+  .map-wrap {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
   }
+  .map-wrap iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .mail-contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0;
+  }
+  .left-details{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wrap{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .wrap:hover .img-wrap{
+    background: #34b7a7;
+  }
+  .wrap:hover .img-wrap > svg{
+    color: #fff;
+  }
+  .wrap .wrap-info{
+    margin-left: 10px;
+  }
+  .wrap div h3{
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .wrap div p{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .img-wrap{
+    height: 46px;
+    width: 46px;
+    background: #effbf9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+  }
+  .img-wrap > svg{
+    height: 22px;
+    width: 22px;
+    color: #34b7a7;
+    transition: color 0.5s ease;
+  }
+  .right-details{
+     width: 100%;
+  }
+  form{
+    position: relative;
+    width: 100%;
+  }
+  #nameCollector, 
+  #emailCollector, 
+  #subjectCollector, 
+  #messageCollector{
+    margin: 0;
+    height: 30px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: none;
+    appearance: none;
+    color: #212529;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    background: #fff;
+    transition: border-color 0.5s ease-in-out;
+  }
+  #nameCollector:focus, #emailCollector:focus, #subjectCollector:focus, #messageCollector:focus{
+    outline: none !important;
+    border-color: #34b7a7;
+  }
+  form .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  form .column{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nameCollector{
+    width: 50%;
+    margin: 0 15px 25px 0;
+  }
+  #emailCollector{
+    width: 50%;
+    margin: 0 0 25px 15px;
+  }
+  #subjectCollector{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #messageCollector{
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 25px;
+    max-height: 250px;
+  }
+  .wrap-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrap-button  button{
+    color: #fff;
+    background: #34b7a7;
+    border-radius: 50px;
+    padding: 10px 30px 12px 30px;
+    border: 0;
+    font-size: 20px;
+    transition: background 0.5s ease;
+    cursor: pointer;
+  }
+  .wrap-button  button:hover{
+    background: #35ceb9;
+  }
+}
 @media screen and (max-width: 768px) {
+  .map-wrap {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
   }
-  
+  .map-wrap iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .mail-contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0;
+  }
+  .left-details{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wrap{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .wrap:hover .img-wrap{
+    background: #34b7a7;
+  }
+  .wrap:hover .img-wrap > svg{
+    color: #fff;
+  }
+  .wrap .wrap-info{
+    margin-left: 10px;
+  }
+  .wrap div h3{
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+  .wrap div p{
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .img-wrap{
+    height: 46px;
+    width: 46px;
+    background: #effbf9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+  }
+  .img-wrap > svg{
+    height: 22px;
+    width: 22px;
+    color: #34b7a7;
+    transition: color 0.5s ease;
+  }
+  .right-details{
+     width: 100%;
+  }
+  form{
+    position: relative;
+    width: 100%;
+  }
+  #nameCollector, 
+  #emailCollector, 
+  #subjectCollector, 
+  #messageCollector{
+    margin: 0;
+    height: 30px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: none;
+    appearance: none;
+    color: #212529;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    background: #fff;
+    transition: border-color 0.5s ease-in-out;
+  }
+  #nameCollector:focus, #emailCollector:focus, #subjectCollector:focus, #messageCollector:focus{
+    outline: none !important;
+    border-color: #34b7a7;
+  }
+  form .row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  form .column{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nameCollector{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #emailCollector{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #subjectCollector{
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #messageCollector{
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 25px;
+    max-height: 250px;
+  }
+  .wrap-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrap-button  button{
+    color: #fff;
+    background: #34b7a7;
+    border-radius: 50px;
+    padding: 10px 30px 12px 30px;
+    border: 0;
+    font-size: 20px;
+    transition: background 0.5s ease;
+    cursor: pointer;
+  }
+  .wrap-button  button:hover{
+    background: #35ceb9;
+  }
+}
